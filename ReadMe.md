@@ -39,3 +39,19 @@ For GUI version:
 •	Clikc ‘schedule’ to run the scheduler
 •	Click ‘show memory’ to refresh the momory display
 •	Process and memory lists update automatically after actions
+
+
+usage
+```
+MiniOS Help
+
+Commands:
+create [process name]   Creates a new process
+ps                      Lists all processes and the current state
+schedule                Schedules all of the processes to be executed
+alloc [pid] [size]      Allocates [size] bytes to the provided PID
+free [pid]              Frees the allocated memory to the provided PID
+mem                     Prints out the memory
+help                    Prints this message
+exit                    Exits the program
+```
