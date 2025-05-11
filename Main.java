@@ -59,9 +59,27 @@ public class Main {
                         break;
 
                     case "exit":
+                    case "q":
                         System.out.println("Exiting MiniOS...");
                         scanner.close();
                         System.exit(0);
+
+                    case "help":
+                    case "h":
+                        System.out.println("MiniOS Help\n");
+                        System.out.println("Commands:");
+                        System.out.println("create [process name]\tCreates a new process");
+                        System.out.println("ps\t\t\tLists all processes and the current state");
+                        System.out.println("schedule\t\tSchedules all of the processes to be executed");
+                        System.out.println("alloc [pid] [size]\tAllocates [size] bytes to the provided PID");
+                        System.out.println("free [pid]\t\tFrees the allocated memory to the provided PID");
+                        System.out.println("mem\t\t\tPrints out the memory");
+                        System.out.println("help\t\t\tPrints this message");
+                        System.out.println("exit\t\t\tExits the program");
+                        System.out.println("");
+
+                        break;
+
 
                     default:
                         System.out.println("Unknown command: " + command);
