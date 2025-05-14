@@ -51,7 +51,6 @@ public class Main {
                         }
                         int pidToFree = Integer.parseInt(parts[1]);
                         mm.free(pidToFree);
-                        System.out.println("Freed memory for PID " + pidToFree);
                         break;
 
                     case "mem":

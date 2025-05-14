@@ -72,19 +72,16 @@ public class MiniOSGUI extends JFrame {
                 sizeField.setText("");
             }
         };
-        
+
         pidField.addActionListener(allocAction);
         sizeField.addActionListener(allocAction);
+        allocButton.addActionListener(allocAction);
 
-
-        JButton memButton = new JButton("Show Memory");
-        memButton.addActionListener(e -> refreshMemory());
         memoryPanel.add(new JLabel("PID:"));
         memoryPanel.add(pidField);
         memoryPanel.add(new JLabel("Size:"));
         memoryPanel.add(sizeField);
         memoryPanel.add(allocButton);
-        memoryPanel.add(memButton);
 
         // Memory Area
         memoryArea.setEditable(false);
